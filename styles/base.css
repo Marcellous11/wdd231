@@ -42,6 +42,7 @@ header span{
 
 .navigation{
     display: none;
+
 }
 .navigation.show{
     display: block;
@@ -70,7 +71,7 @@ header span{
 
 footer{
     background-color:rgb(219, 219, 219) ;
-    padding: 1rem 10px;
+    padding: 1rem 0px;
     text-align: center;
 }
 
