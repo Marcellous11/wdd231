@@ -16,17 +16,16 @@ Secondary: #2f4858
 header {
   display: grid;
   grid-template-columns: 24px auto 44px;
-  padding: 5px 0 5px 10px;
+  padding: 5px 0;
   border-bottom: solid var(--secondary-color) 1px;
   column-gap: 8px;
-  align-items: end;
+  align-items: center;
 }
 
 header img{
     display: block;
     width: 100%;
     height: auto;
-    padding-bottom: 5px;
 }
 
 header span{
@@ -89,7 +88,8 @@ main{
     color: var(--secondary-color);
 }
 section{
-    padding: 5px;
+    margin: 5px;
+    background-color: var(--light-color);
 }
 
 main h1, main h2 {
@@ -109,6 +109,25 @@ section img{
   
 }
 
+#filter-btns{
+    display: flex;
+    column-gap: 2px;
+    justify-content: space-evenly;
+}
+#filter-btns button{
+    background: none;
+    background-color: var(--main-gray);
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    
+    padding: 5px;
+}
+#filter-btns button:hover{
+
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+
+}
 footer{
     background-color: var(--main-gray) ;
     padding: 1rem 0px;
