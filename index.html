@@ -9,34 +9,61 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>WDD 231</title>
 </head>
 <body>
     <header>
         <img src="images/bookmark-icon.svg" alt="site log" width="24" height="24">
         <span>
-            Tempus Fugit Library
+            Marcellous Curtis Jr
         </span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"> <a>Home page </a></li>
-            <li> <a>Collections</a></li>
-            <li> <a>Rentals</a></li>
+            <li class="current"> <a>Home</a></li>
+            <li> <a>Chamber</a></li>
+            <li> <a>Final</a></li>
         </ul>
         
     </nav>
-    <main></main>
+    <main>
+        <h1>Home</h1>
+        <section> 
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa, atque maiores alias provident aut, vitae similique animi at voluptate molestias dicta molestiae voluptatem laudantium inventore. Distinctio eos necessitatibus assumenda?</p>
+        </section>
+        <section> 
+            <h2>Student Photo</h2>
+            <img src="images/profilePic.jpg">
+        </section>
+        <section> 
+            <h2>Web Certificate Courses</h2>
+            <div id="filter-btns">
+                <button id="allcourses">All Courses</button>
+                <button id="wddcourses">WDD Courses</button>
+                <button id="csecourses">CSE Courses</button>
+            </div>
+            <p>The total number of credits listed below is <span id="totalcredits"></span></p>
+            <div id="courseContainer">
+
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="soical-links">
            <a href="https://www.linkedin.com/in/m-curtis-jr/"><img src="images/linkedin-circle.svg" alt="linkedin logo"></a> 
-           <a href="https://github.com/Marcellous11"> <img src="images/github.svg" alt="github logo"></a>
+           <a href="https://github.com/Marcellous11"> <img src="images/github-brands-solid.svg" alt="github logo"></a>
            <a href="https://www.facebook.com/marcellous.curtisjr.1"> <img src="images/facebook.svg" alt="facebook logo"></a>
         </div>
-        <p>Copy right year and date</p>
-        <p>Late date Modified </p>
+        <p>&copy;<span id="currentyear"></span> | Marcellous Curtis | Texas, USA</p>
+        <span id="lastmod">Late date Modified </span>
     </footer>
     <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/course.js"></script>
 </body>
 </html>
