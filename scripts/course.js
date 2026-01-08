@@ -105,27 +105,25 @@ const setDisplay = (courses) =>{
     let creditTotalValue = courses.reduce((total,course)=>{
         return total + course.credits
         },0)
-        
+
     totalcredits.innerHTML = creditTotalValue
+}
+
+const filterBySubjectAndSet = (subject) =>{
+    let filteredcourses = courses.filter((course)=>{
+        return course.subject === subject
+    })
+    setDisplay(filteredcourses)
 }
 
 setDisplay(courses)
 
 allcourses.addEventListener("click",()=>{
-    let filteredcourses = courses.filter((course)=>{
-        return true
-    })
-    setDisplay(filteredcourses)
+    filterBySubjectAndSet(courses)
 })
 wddcourses.addEventListener("click",()=>{
-    let filteredcourses = courses.filter((course)=>{
-        return course.subject === "WDD"
-    })
-    setDisplay(filteredcourses)
+    filterBySubjectAndSet("WDD")
 })
 csecourses.addEventListener("click",()=>{
-    let filteredcourses = courses.filter((course)=>{
-        return course.subject === "CSE"
-    })
-    setDisplay(filteredcourses)
+    filterBySubjectAndSet("CSE")
 })
