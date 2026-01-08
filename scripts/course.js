@@ -119,7 +119,7 @@ const filterBySubjectAndSet = (subject) =>{
 setDisplay(courses)
 
 allcourses.addEventListener("click",()=>{
-    filterBySubjectAndSet(courses)
+    setDisplay(courses)
 })
 wddcourses.addEventListener("click",()=>{
     filterBySubjectAndSet("WDD")
