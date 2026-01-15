@@ -2,7 +2,7 @@ const memberCards = document.querySelector("#member-cards")
 
 const getMemberData = async ()=>{
 
-    let response = await fetch("scripts/members.json")
+    let response = await fetch("data/members.json")
     let data = await response.json()
 
     displayCards(data.members)
