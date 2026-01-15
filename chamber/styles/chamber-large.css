@@ -1,0 +1,43 @@
+@media only screen and (min-width:38rem){
+
+    main{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header{
+        grid-template-columns: 24px auto;
+    }
+    .hamburger{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: start;
+    }
+    .navigation a{
+        border: none
+    }
+    .navigation li.current a {
+        color: var(--off-white);
+}
+
+
+    #member-cards{
+        display: grid;
+
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    footer{
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,60 @@
+{
+    "members":[
+        {
+            "company_name":"Pizzeria Testa",
+            "company_address":"8660 Church St, Frisco, TX 75034",
+            "company_phone_number": "+14692008015",
+            "url":"http://www.pizzeriatesta.com/",
+            "image":"https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy8s8Yw4KAjpZ99p66-Catl7fmaKOc8jpQX-3ihn8YKjJji4qhH7cQ26AMSQ-Aq4YEvnqrdYWlwxNxMWOkmPFoA4CmXnfcXgn6tIRiYL4Uoj2lW3PPVAskAB-wpNXasatvOJGq8=w426-h240-k-no",
+            "member_level": 1
+        },
+        {
+            "company_name":"Sake Toro Sushi",
+            "company_address":"8801 Coleman Blvd, Frisco, TX 75034",
+            "company_phone_number": "+12148722831",
+            "url":"http://www.saketorosushi.com/",
+            "image":"https://static.wixstatic.com/media/b92f20_7ff0d4d56507433fb74ea8f822c558bb~mv2.png/v1/fill/w_474,h_472,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo.png",
+            "member_level": 2
+        },
+        {
+            "company_name":"Best Thai",
+            "company_address":"8897 Coleman Blvd, Frisco, TX 75034",
+            "company_phone_number": "+19723770170",
+            "url":"https://www.bestthai.com/",
+            "image":"https://lh3.googleusercontent.com/p/AF1QipOOGs8ZCb3M0IS7twg4UnE_rWlb2vg6SmckWP9C=w408-h271-k-no",
+            "member_level": 1
+        },
+        {
+            "company_name":"Anchor Bar",
+            "company_address":"6129 Main St, Frisco, TX 75034",
+            "company_phone_number": "+14698886060",
+            "url":"http://www.anchorbar.com/",
+            "image":"https://cdn-bkdje.nitrocdn.com/QLBKFErPRQWJguEJYmrHVlSdfjGDDpwi/assets/images/optimized/rev-5be0a2e/anchorbar.com/wp-content/uploads/2019/11/BIGLOGO.png#10244",
+            "member_level": 3
+        },
+        {
+            "company_name":"Panj Tara Indian Kitchen & Bar",
+            "company_address":"1232 Mountain way",
+            "company_phone_number": "+14699229640",
+            "url":"https://www.panjtaratx.com/",
+            "image":"https://images.getbento.com/accounts/27b74eace89380a8d0aa8e0b7be12f14/media/images/28855panj_tara_logo.png",
+            "member_level": 3
+        },
+        {
+            "company_name":"Sweet Tooth Dental Loft",
+            "company_address":"18838 Coleman Blvd, Frisco, TX 75034",
+            "company_phone_number": "+14692485638",
+            "url":"https://sweettoothdentalloft.com/",
+            "image":"https://lh3.googleusercontent.com/p/AF1QipMHVq23w8cyjydJ-9yVjCt_qnk8PVytjFsyZdWd=w408-h272-k-no",
+            "member_level": 2
+        },
+        {
+            "company_name":"Jakes Burgers and Beer",
+            "company_address":"6195 Main St, Frisco, TX 75034",
+            "company_phone_number": "+12147051770",
+            "url":"https://www.jakesburgersandbeer.com/",
+            "image":"https://jakesburgersandbeer.com/wp-content/uploads/2024/07/cropped-Jakes_SecondaryLockup_FullColor_noback-600x210.png",
+            "member_level": 2
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Frisco TX Chamber Commerce</title>
+    <meta name="title" content="Chamber of Frisco" />
+    <meta name="author" content="Marcellous Curtis Jr" />
+    <meta
+      name="description"
+      content="Frisco Tx chamber landing page. A place for visitors and locals to learn more about what the city of Frisco has to offer."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content="Frisco Chamber" />
+    <meta
+      property="og:description"
+      content="Frisco Tx chamber landing page. A place for visitors and locals to learn more about what the city of Frisco has to offer."
+    />
+    <meta
+      property="og:url"
+      content="https://marcellous11.github.io/wdd231/chamber/directory.html"
+    />
+    <meta property="og:image" content="chamber/images/ssmimage.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/chamber-large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/image-logo.png" alt="site log" width="24" height="24" />
+      <span> Frisco TX Chamber Commerce </span>
+      <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current"><a>Home</a></li>
+        <li><a>Chamber</a></li>
+        <li><a>Final</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="member-cards"></section>
+    </main>
+    <footer>
+      <div class="soical-links">
+        <a href="https://www.linkedin.com/in/m-curtis-jr/"
+          ><img src="images/linkedin-circle.svg" alt="linkedin logo"
+        /></a>
+        <a href="https://github.com/Marcellous11">
+          <img src="images/github-brands-solid.svg" alt="github logo"
+        /></a>
+        <a href="https://www.facebook.com/marcellous.curtisjr.1">
+          <img src="images/facebook.svg" alt="facebook logo"
+        /></a>
+      </div>
+      <p>
+        &copy;<span id="currentyear"></span> | Marcellous Curtis Jr. | Texas,
+        USA
+      </p>
+      <span id="lastmod">Late date Modified </span>
+    </footer>
+    <script src="../scripts/date.js" defer></script>
+    <script src="scripts/chamber.js" async defer></script>
+    <script src="scripts/navigation.js" async defer></script>
+  </body>
+</html>

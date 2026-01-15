@@ -1,0 +1,147 @@
+:root {
+  --primary-color: #b6302a;
+  --secondary-color: #0069ed;
+  --off-white: #f3eed9;
+  --off-black: #233641;
+  --gray: #e2e8ec;
+  --font-family: "Vend Sans", sans-serif;
+}
+
+/* *********** NAVIGATION BAR *************** */
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0;
+  border-bottom: solid var(--off-black) 1px;
+  column-gap: 8px;
+  align-items: center;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: var(--off-black);
+  font-family: var(--header-font);
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "☰";
+  font-size: 2rem;
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+.navigation {
+  display: none;
+}
+.navigation.show {
+  display: block;
+}
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-gray);
+}
+.navigation a {
+  display: block;
+  padding: 0.8rem 10px;
+  color: var(--off-black);
+  text-decoration: none;
+  border-bottom: solid var(--off-black) 1px;
+}
+
+.navigation li.current {
+  background-color: var(--secondary-color);
+}
+.navigation li.current a {
+  color: var(--off-white);
+}
+
+.navigation li:hover a{
+  background-color: var(--primary-color);
+  color: var(--off-white);
+}
+
+/* **************** GENERAL BODY ****************** */
+
+body {
+  font-family: var(--font-family);
+}
+
+main {
+  color: var(--off-black);
+}
+
+main h1,
+main h2 {
+  font-family: var(--font-family);
+}
+
+/* **************** VARIABLE ****************** */
+
+#member-cards {
+  display: block;
+  margin: 0 auto;
+}
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--off-white);
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.member-card img {
+  width: 100px;
+}
+.member-card h3 {
+  margin-bottom: 0;
+}
+
+/* ************** FOOTER ***************** */
+
+footer {
+  background-color: var(--gray);
+  padding: 1rem 0px;
+  text-align: center;
+  color: var(--off-black);
+}
+
+.soical-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+.soical-links a {
+  display: flex;
+  border: 1px solid var(--secondary-color);
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.soical-links img {
+  width: 22px;
+  height: 22px;
+}
+.soical-links a:hover {
+  background-color: var(--primary-color);
+}
