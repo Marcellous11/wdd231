@@ -39,7 +39,7 @@
     <header>
       <img src="images/image-logo.webp" alt="site log" width="24" height="24" />
       <span> Frisco TX Chamber Commerce </span>
-      <button id="ham-btn" class="hamburger"></button>
+      <button aria-label="Name"="navigation menu button" id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
       <ul>
@@ -50,18 +50,34 @@
     </nav>
     <main>
       <h1>Directory</h1>
-      <section id="member-cards"></section>
+      <div id="toggle-view">
+        <button class="active-btn"><img src="images/grid-fill-icon.svg" alt="Module icon" width="20" height="20"></button>
+        <button class=""><img src="images/list-icon.svg" alt="list icon" width="20" height="20"></button>
+
+      </div>
+      <section id="member-cards" class="active"></section>
+      <section id="table-view">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>URL</th>
+            <th>Member Level</th>
+          </tr>
+        </table>
+      </section>
     </main>
     <footer>
       <div class="soical-links">
         <a href="https://www.linkedin.com/in/m-curtis-jr/"
-          ><img src="images/linkedin-circle.svg" alt="linkedin logo"
+           ><img src="images/linkedin-circle.svg" alt="linkedin logo" height="24" width="24"
         /></a>
         <a href="https://github.com/Marcellous11">
-          <img src="images/github-brands-solid.svg" alt="github logo"
+          <img src="images/github-brands-solid.svg" alt="github logo" height="24" width="24"
         /></a>
         <a href="https://www.facebook.com/marcellous.curtisjr.1">
-          <img src="images/facebook.svg" alt="facebook logo"
+          <img src="images/facebook.svg" alt="facebook logo" height="24" width="24"
         /></a>
       </div>
       <p>
