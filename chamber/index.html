@@ -37,6 +37,7 @@
   </head>
   <body>
     <header>
+
       <img src="images/image-logo.webp" alt="site log" width="24" height="24" />
       <span> Frisco TX Chamber Commerce </span>
       <button aria-label="navigation menu button" id="ham-btn" class="hamburger"></button>
@@ -49,11 +50,106 @@
         <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
+           <section id="hero">
+            <div id="hero-img-container">
+                <picture>
+                <source srcset="images/hero-image-medium.webp" media="(min-width: 608px)"> 
+                <img src="images/hero-image-small.webp" alt="Hero image for chamber of commerce">   
+            </picture>
+            
+            </div>
 
-    <main>
-      <!-- MAIN CONTENT -->
+            <div id="CTA">
+                <span>Become a member now!</span>
+                <a href="join.html">
+                     <button>Join!</button>
+                </a>
+             
+            </div>
+        </section> 
+    <main id="main-landing">
+
+        <h1>Home</h1>
+        <section id="updates-section">
+            <div id="events-group" class="home-display-items">
+                <h2>Events</h2>
+                <img src="images/currentEvents.webp" alt="Current events image">
+                <h3>Up This Week</h3>
+                <ul>
+                  <li>
+                  <div class="event-details">
+                    <h4>
+                      Karaoke Night!
+                    </h4>
+                    <ul>
+                      <li>Time: Saturday @10pm - 12am</li>
+                      <li>Location: Frisco Square</li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li>
+                  <div class="event-details">
+                    <h4>
+                      Job Fair
+                    </h4>
+                    <span>Saturday @4pm - 6pm</span>
+                    <span>Frisco Square</span>
+                  </div>
+                  </li>
+     
+                </ul>
+            </div>
+            <div id="weather-group" class="home-display-items">
+                <h2>Current Weather</h2>
+                <img src="images/list-icon.svg" id="weather-icon" alt="Weather Icon"/>
+                <div id="conditions-group">
+                    <p id="current-temp"></p>
+                    <p id="conditions"></p>
+                    <p id="highs"></p>
+                    <p id="lows"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
+            </div>
+            <div id="forecast-group" class="home-display-items">
+                <h2>Weather Forecast</h2>
+
+            </div>
+        </section>
+        <section id="featuredMembers">
+          <div class="memberCard">
+            <h3>Anchor Bar</h3>
+            <span>Rating ✯✯✯</span>
+            <img src="images/businesses/bar.webp" alt="">
+            <ul>
+              <li><b>Email:</b> anchorbar@gmail.com</li>
+              <li><b>Phone:</b> +14698886060</li>
+              <li><b>Url:</b> <a href="http://www.anchorbar.com">anchorbar</a></li>
+            </ul>
+          </div>
+          <div class="memberCard">
+            <h3>Panj Tara Indian Kitchen & Bar</h3>
+            <span>Rating ✯✯✯</span>
+            <img src="images/businesses/indian.webp" alt="">
+            <ul>
+              <li><b>Email:</b> "panjtara@gmail.com</li>
+              <li><b>Phone:</b> +14699229640</li>
+              <li><b>Url:</b> <a href="https://www.panjtaratx.com/">panjtaratx</a></li>
+            </ul>
+          </div>
+          <div class="memberCard">
+            <h3>Jakes Burgers and Beer</h3>
+            <span>Rating ✯✯</span>
+            <img src="images/businesses/burger.webp" alt="">
+            <ul>
+              <li><b>Email:</b> jakesburgers@gmail.com</li>
+              <li><b>Phone:</b> +12147051770</li>
+              <li><b>Url:</b> <a href="https://www.jakesburgersandbeer.com/">jakesburgersandbeer</a></li>
+            </ul>
+          </div>
+        </section>
     </main>
-
      <footer>
       <div class="soical-links">
         <a href="https://www.linkedin.com/in/m-curtis-jr/"
@@ -75,5 +171,7 @@
     <script src="../scripts/date.js" defer></script>
     <script src="scripts/chamber.js" async defer></script>
     <script src="scripts/navigation.js" async defer></script>
+    <script  type="module" src="scripts/weather.mjs" ></script>
+    <script type="module" src="scripts/weathertools.mjs" ></script>
   </body>
 </html>

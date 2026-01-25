@@ -4,7 +4,7 @@
   --off-white: #f3eed9;
   --off-black: #233641;
   --gray: #e2e8ec;
-  --font-family: "Vend Sans", sans-serif;
+  --font-family: "Vend Sans", "Poiret One", sans-serif;
 }
 
 /* *********** NAVIGATION BAR *************** */
@@ -27,7 +27,7 @@ header img {
 header span {
   font-size: 1.2rem;
   color: var(--off-black);
-  font-family: var(--header-font);
+  font-family: var(--font-family);
 }
 
 .hamburger {
@@ -126,6 +126,26 @@ main h2 {
 
 /* **************** VARIABLE ****************** */
 
+#CTA{
+  font-weight: 800;
+  text-align: center;
+}
+
+#CTA button{
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--off-white);
+}
+#CTA button:hover{
+  background-color: var(--secondary-color);
+}
+
+h1{
+  margin-left: 4%;
+}
+
 #member-cards.active {
   display: block;
 }
@@ -176,9 +196,135 @@ main h2 {
   white-space: nowrap;
   padding: 5px 0;
   text-align: center;
+
+  
 }
+/* ************ Landing Page ************* */
+#hero img{
+    width: 100%;
+  }
 
+  /* Events */
 
+  #updates-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #updates-section h2{
+    text-align: center;
+    background-color: var(--off-black);
+    color: var(--off-white);
+    margin:  0;
+    padding:8px;
+
+  }
+
+  .home-display-items{
+    width: 400px;
+    margin: 0 10px;
+    background-color: rgb(238, 238, 238);
+  }
+
+  #events-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #events-group h2{
+    grid-column: 1/3;
+  }
+  #events-group img{
+    grid-row: 2/4;
+    width: 150px;
+  }
+  #events-group h3{
+    margin-bottom: 0;
+  }
+  #events-group ul{
+    /* list-style: none; */
+    padding: 0;
+  }
+  .event-details ul li{
+    list-style: none;
+  }
+
+  .event-details h4 {
+    margin: 0;
+  }
+
+  #weather-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  #weather-group h2{ 
+    grid-column: 1/3;
+
+  }
+
+  #weather-group img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  #current-temp{
+    font-weight: 800;
+  }
+
+  #forecast-group{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  #forecast-group p {
+    align-self: center;
+
+  }
+  #forecast-group span {
+    font-weight: 800;
+  }
+
+  .memberCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--off-black);
+    border:none;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    margin:10px auto;
+    max-width: 400px;
+  }
+  .memberCard h3{
+    grid-column: 1/4;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--off-white);
+  }
+  .memberCard span{
+    grid-column: 1/4;
+    text-align: center;
+    border-bottom: 1px solid var(--off-black);
+    background-color: var(--secondary-color);
+    color: var(--off-white);
+  }
+  .memberCard img{
+    width: 150px;
+    margin: 5px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+  }
+  .memberCard ul{
+    list-style: none;
+    margin: 3px 10px;
+    grid-column: 2/4;
+    padding: 0;
+
+  }
+  .memberCard li{
+    margin: 5px 0;
+  }
 
 /* ************** FOOTER ***************** */
 
