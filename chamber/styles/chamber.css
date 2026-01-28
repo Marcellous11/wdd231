@@ -131,14 +131,15 @@ main h2 {
   text-align: center;
 }
 
-#CTA button{
+#CTA a{
   border: none;
+  display: inline-block;
   padding: 20px;
   border-radius: 5px;
   background-color: var(--primary-color);
   color: var(--off-white);
 }
-#CTA button:hover{
+#CTA a:hover{
   background-color: var(--secondary-color);
 }
 
