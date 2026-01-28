@@ -203,6 +203,8 @@ h1{
 /* ************ Landing Page ************* */
 #hero img{
     width: 100%;
+    max-width: 11git 00px;
+    margin: 0 auto;
   }
 
   /* Events */
