@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Frisco TX Chamber Commerce Home Page</title>
@@ -11,7 +11,7 @@
       content="Frisco Tx chamber landing page. A place for visitors and locals to learn more about what the city of Frisco has to offer."
     />
 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,11 +39,15 @@
     <header>
       <img src="images/image-logo.webp" alt="site log" width="24" height="24" />
       <span> Frisco TX Chamber Commerce </span>
-      <button aria-label="navigation menu button" id="ham-btn" class="hamburger"></button>
+      <button
+        aria-label="navigation menu button"
+        id="ham-btn"
+        class="hamburger"
+      ></button>
     </header>
     <nav id="nav-bar" class="navigation">
       <ul>
-         <li class=""><a href="index.html">Home</a></li>
+        <li class=""><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
@@ -52,18 +56,136 @@
 
     <main>
       <!-- MAIN CONTENT -->
+      <h1>Join Now</h1>
+      <section class="joinform">
+        <h2>Business From</h2>
+        <form method="get" action="thankyou.html">
+          <label for="firstName">
+            First Name
+          </label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            required
+            title="firstName"
+            autocomplete="given-name"
+          />
+          <label for="lastName">
+            Last Name
+          </label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            required
+            title="lastName"
+            autocomplete="family-name"
+          />
+          <label for="email">
+            Email
+          </label>
+          <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          />
+          <label for="tel">
+            Phone Number
+          </label>
+          <input
+          type="tel"
+          name="tel"
+          id="tel"
+          title="Phone number"
+          autocomplete="tel"
+          />
+          <label for="organizationTitle">
+            Organization Title
+          </label>
+          <input
+          type="text"
+          name="organizationTitle"
+          id="organizationTitle"
+          title="Organization Title"
+          autocomplete="organization"
+          pattern="[A-Za-z].{7,}"
+          />
+          <label for="organization">
+            Organization
+          </label>
+          <input
+            type="text"
+            name="organization"
+            id="organization"
+            title="organization"
+            autocomplete="organization-title"
+            pattern="[A-Za-z].{7,}"
+          />
+          <label for="memberLevel">Membership Level</label>
+          <select name="memberLevel" id="memberLevel">
+            <option value="">--- Select ---</option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+          <label for="description">Description</label>
+          <textarea name="description" id="description"></textarea>
+          <time></time>
+          <input type="submit" title="Buttom" />
+        </form>
+      </section>
+      <section id="membersection">
+        <h2>Member Level</h2>
+        <div class="memberlevelbox">
+          <h3>Non Profit Membership</h3>
+          <button>Learn more</button>
+        </div>
+        <div class="memberlevelbox">
+          <h3>Bronze Membership</h3>
+          <button>Learn more</button>
+        </div>
+        <div class="memberlevelbox">
+          <h3>Silver Membership</h3>
+          <button>Learn more</button>
+        </div>
+        <div class="memberlevelbox">
+          <h3>Gold Membership</h3>
+          <button>Learn more</button>
+        </div>
+        <dialog>
+          <h4></h4>
+          <dl>
+          </dl>
+          <button id="closeDialog">Close</button>
+        </dialog>
+      </section>
     </main>
 
-     <footer>
+    <footer>
       <div class="soical-links">
         <a href="https://www.linkedin.com/in/m-curtis-jr/"
-           ><img src="images/linkedin-circle.svg" alt="linkedin logo" height="24" width="24"
+          ><img
+            src="images/linkedin-circle.svg"
+            alt="linkedin logo"
+            height="24"
+            width="24"
         /></a>
         <a href="https://github.com/Marcellous11">
-          <img src="images/github-brands-solid.svg" alt="github logo" height="24" width="24"
+          <img
+            src="images/github-brands-solid.svg"
+            alt="github logo"
+            height="24"
+            width="24"
         /></a>
         <a href="https://www.facebook.com/marcellous.curtisjr.1">
-          <img src="images/facebook.svg" alt="facebook logo" height="24" width="24"
+          <img
+            src="images/facebook.svg"
+            alt="facebook logo"
+            height="24"
+            width="24"
         /></a>
       </div>
       <p>
@@ -75,5 +197,6 @@
     <script src="../scripts/date.js" defer></script>
     <script src="scripts/chamber.js" async defer></script>
     <script src="scripts/navigation.js" async defer></script>
+    <script src="scripts/join.js" async defer></script>
   </body>
 </html>

@@ -329,6 +329,108 @@ h1{
     margin: 5px 0;
   }
 
+/* ************** JOIN PAGE ***************** */
+
+.joinform form{
+  margin: 0 auto;
+  margin-left:5px ;
+
+}
+.joinform label{
+display: block;
+
+}
+.joinform input,select,textarea{
+  width: 90%;
+  margin: 0 auto;
+  display: inline-block;
+  height: 44px;
+  margin-bottom: 10px;
+}
+
+
+.memberlevelbox{
+  background-color: var(--gray);
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.memberlevelbox:hover{
+  border: 1px solid var(--off-black);
+}
+.memberlevelbox h3{
+  text-align: center;
+}
+
+.memberlevelbox button{
+  margin: 0 auto;
+  border: 0;
+  display: block ;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--off-white);
+  padding: 5px;
+}
+
+.memberlevelbox button:hover{
+  background-color: var(--secondary-color);
+
+}
+
+#membersection dialog {
+  border-radius: 5px;
+  border: none;
+
+} 
+#membersection dialog dt,#membersection dialog dd {
+  margin: 0;
+  padding-left: 60px;
+
+} 
+#membersection dialog dt:nth-of-type(even),#membersection dialog dd:nth-of-type(even) {
+  background-color: var(--gray);
+
+} 
+
+::backdrop{
+  background-color: rgb(0 0 0 / 50%);
+}
+
+#membersection dialog dl{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ************** THANK YOU PAGE ***************** */
+
+#thankyou h1{
+  text-align: center;
+}
+#responselist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+  background-color: var(--gray);
+  padding: 10px;
+  width: 90%;
+  margin:0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#responselist dt, #responselist dd{
+  margin: 0;
+  line-height: 30px;
+}
+
+#thankyou span{
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+}
+
 /* ************** FOOTER ***************** */
 
 footer {
