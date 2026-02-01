@@ -37,6 +37,10 @@ for(const [key,value] of params){
     }else if(key === "description") {
         keyValue.textContent = "Description"
         valueOfKey.textContent = displayValue
+    }else if(key === "timestamp") {
+        keyValue.textContent = "Time Stamp"
+        const timeInMilli =  Date.now()
+        valueOfKey.textContent = new Date(timeInMilli).toString()
     }
 
     console.log(key)

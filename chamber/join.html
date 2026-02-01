@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Frisco TX Chamber Commerce Home Page</title>
-    <meta name="title" content="Chamber of Frisco" />
+    <title>Frisco TX Chamber Commerce Join Page</title>
+    <meta name="title" content="Chamber of Frisco Join Page" />
     <meta name="author" content="Marcellous Curtis Jr" />
     <meta
       name="description"
-      content="Frisco Tx chamber landing page. A place for visitors and locals to learn more about what the city of Frisco has to offer."
+      content="Frisco Tx chamber join page. Here business can learn more about member levels and request to join."
     />
 
     <link rel="icon" href="images/favicon.ico" />
@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <meta property="og:title" content="Frisco Chamber" />
+    <meta property="og:title" content="Frisco Chamber Join Page" />
     <meta
       property="og:description"
       content="Frisco Tx chamber landing page. A place for visitors and locals to learn more about what the city of Frisco has to offer."
@@ -90,6 +90,7 @@
           name="email"
           id="email"
           autocomplete="email"
+          required
           />
           <label for="tel">
             Phone Number
@@ -100,6 +101,7 @@
           id="tel"
           title="Phone number"
           autocomplete="tel"
+          required
           />
           <label for="organizationTitle">
             Organization Title
@@ -111,6 +113,7 @@
           title="Organization Title"
           autocomplete="organization"
           pattern="[A-Za-z].{7,}"
+          required
           />
           <label for="organization">
             Organization
@@ -133,7 +136,8 @@
           </select>
           <label for="description">Description</label>
           <textarea name="description" id="description"></textarea>
-          <time></time>
+          <label for="timestamp"></label>
+          <input type="hidden" name="timestamp" id="timestamp"></input>
           <input type="submit" title="Buttom" />
         </form>
       </section>
