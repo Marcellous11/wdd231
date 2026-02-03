@@ -382,6 +382,7 @@ display: block;
 #membersection dialog {
   border-radius: 5px;
   border: none;
+  line-height: 40px;
 
 } 
 #membersection dialog dt,#membersection dialog dd {
