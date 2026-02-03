@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Marcellous Curtis Jr CSE Profile">
+    <meta property="og:description" content="Website for showing off some skills learned in my CSE 231 class. Follow links to Github for more!">
+    <meta property="og:image" content="images/smmphotos.webp">
+    <meta property="og:locale" content="en_US"> 
+    <meta charset="UTF-8">
+    <meta name="author" content="Marcellous Curtis Jr">
+    <meta name="class" content="WDD 231: Web Frontend Development I">
+    <meta name="description" content="Website for showing off some skills learned in my CSE 231 class">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mealideas.css">
+    <link rel="stylesheet" href="styles/mealideas-large.css">
+    <title>Meal Ideas</title>
+</head>
+<body>
+    <header>
+        <img src="images/bookmark-icon.svg" alt="site log" width="24" height="24">
+        <span>
+            Marcellous Curtis Jr
+        </span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"> <a>Home</a></li>
+            <li> <a>Chamber</a></li>
+            <li> <a>Final</a></li>
+        </ul>
+        
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section> 
+            <h2>About Me</h2>
+            <p>Software and AI engineer from Las Vegas, now living in Frisco, Texas. Working at Invoke Public Sector.</p><p> Married for two years and expecting our first baby. Interested in automation, practical problem-solving, and building technology that supports real-world impact and growth.</p>
+        </section>
+        <section> 
+            <h2>Student Photo</h2>
+            <img src="images/profilepic.jpg" alt="Picture of Marcellous with a Goat">
+        </section>
+        <section> 
+            <h2>Web Certificate Courses</h2>
+            <div id="filter-btns">
+                <button id="allcourses">All Courses</button>
+                <button id="wddcourses">WDD Courses</button>
+                <button id="csecourses">CSE Courses</button>
+            </div>
+            <p>The total number of credits listed below is <span id="totalcredits"></span></p>
+            <div id="courseContainer">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="soical-links">
+           <a href="https://www.linkedin.com/in/m-curtis-jr/"><img src="images/linkedin-circle.svg" alt="linkedin logo"></a> 
+           <a href="https://github.com/Marcellous11"> <img src="images/github-brands-solid.svg" alt="github logo"></a>
+           <a href="https://www.facebook.com/marcellous.curtisjr.1"> <img src="images/facebook.svg" alt="facebook logo"></a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Marcellous Curtis | Texas, USA</p>
+        <span id="lastmod">Late date Modified </span>
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</body>
+</html>
