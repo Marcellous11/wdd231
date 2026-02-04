@@ -5,19 +5,19 @@ memberLevels = {
     "Non Profit Membership":{
         "Membership Price":0,
         "Special Events Tickets":1,
-        "raining Tickets":1,
+        "Training Tickets":1,
         "Advertisements Lots":1
     },
     "Bronze Membership":{
         "Membership Price":50,
         "Special Events Tickets":3,
-        "raining Tickets":5,
+        "Training Tickets":5,
         "Advertisements Lots":3
     },
     "Silver Membership":{
         "Membership Price":150,
         "Special Events Tickets":6,
-        "raining Tickets":10,
+        "Training Tickets":10,
         "Advertisements Lots":6
     },
     "Gold Membership":{

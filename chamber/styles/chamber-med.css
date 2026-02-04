@@ -1,0 +1,15 @@
+@media only screen and (min-width:38rem){
+.discoveryCard{
+  background-color:var(red);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas :
+  "image title"
+  "image description"
+  "image address";
+}
+
+}

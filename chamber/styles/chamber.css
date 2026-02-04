@@ -81,10 +81,12 @@ header span {
 
 body {
   font-family: var(--font-family);
+;
 }
 
 main {
   color: var(--off-black);
+  margin: 10px;
 }
 
 main h1,
@@ -143,8 +145,40 @@ main h2 {
   background-color: var(--secondary-color);
 }
 
-h1{
-  margin-left: 4%;
+#usermessage{
+  font-weight: 800;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.discoveryCard{
+  background-color:var(--gray);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas :
+  "title"
+  "image"
+  "description"
+  "address";
+}
+.discoveryCard h2{
+  grid-area: title;
+  padding: 5px;
+}
+.discoveryCard img{
+ grid-area: image;
+ padding: 5px;
+}
+.discoveryCard p{
+ grid-area: description;
+ padding: 5px;
+}
+.discoveryCard span{
+ grid-area: address;
+ padding: 5px;
 }
 
 #member-cards.active {
