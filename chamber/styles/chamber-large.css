@@ -81,20 +81,23 @@
 /* ******** Discover page ************ */
 .discoveryCard h2{
   grid-area: title;
-  /* padding: 5px; */
 }
+
 .discoveryCard img{
  grid-area: image;
-  /* padding: 5px; */
 }
+.discoveryCard img:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+
 .discoveryCard p{
  grid-area: description;
-  /* padding: 5px; */
 }
+
 .discoveryCard span{
  grid-area: address;
-  /* padding: 5px; */
 }
+
 #places{
     display: grid;
     grid-template-columns: 1fr 1fr;
