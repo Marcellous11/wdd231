@@ -25,6 +25,8 @@ export const displayCards = async (localDataStr,mealContainer) =>{
         container.classList.add("mealCard")
         title.textContent = meal.strMeal
         img.setAttribute("src",meal.strMealThumb)
+        img.setAttribute("alt", meal.strMeal)
+        img.setAttribute("loading", "lazy")
         img.classList.add("foodImage")
 
         description.innerText =`Instructions:\n\n ${meal.strInstructions}`
