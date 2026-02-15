@@ -1,17 +1,17 @@
 :root {
-  --primary-color: #a307ec;
+  --primary-color: hsl(275, 85%, 54%);
   --secondary-color:#31546f ;
   --off-white: #e2d7e7;
   --off-black: #3c2944;
   --gray: #e7e2ec;
-  --header-font:  "Courgette", cursive;
-  --body-font: "Playpen Sans", cursive;
+  --header-font:  "Playwrite NZ Basic", cursive;
+  --body-font: "SN Pro", cursive;
 }
 /* *********** NAVIGATION BAR *************** */
 
 header {
   display: grid;
-  grid-template-columns: 24px auto 44px;
+  grid-template-columns: 94px auto 44px;
   padding: 5px 0;
   background-color: var(--off-black);
 
@@ -38,11 +38,13 @@ header span {
 }
 
 .hamburger::before {
+  color: var(--off-white);
   content: "☰";
   font-size: 2rem;
 }
 
 .hamburger.show::before {
+  color: var(--off-white);
   content: "\00D7";
 }
 
@@ -82,6 +84,7 @@ header span {
 
 body {
   font-family: var(--body-font);
+  margin: 0;
 }
 
 main {
@@ -95,6 +98,12 @@ main h3
  {
   font-family: var(--header-font);
   font-size: 2rem;
+}
+main p{
+  text-align: center;
+}
+h1{
+  text-align:center;
 }
 
 p{
@@ -132,17 +141,71 @@ p{
 
 /* **************** VARIABLE ****************** */
 
+ form{
+  display: inline-block;
+  width: 100%;
+ }
 
-.answer {
-  background-color: var( --off-white);
-  border-radius:  10px;
-  padding: 15px;
-  line-height: 40px;
+input[type="text"]{
+  width: 100%;
+  height: 44px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+input[type="submit"]{
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  display: block;
+  margin: 10px auto;
+}
+input[type="submit"]:hover{
+  color: var(--off-white);
+  background-color: var(--off-black);
 }
 
-.answer img{
-  width: 300px;
+.mealCard{
+  background-color: var(--gray);
+  margin:30px;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 250px;
 }
+.mealCard img{
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  transition: transform  0.3s ease,box-shadow 0.3s ease ;
+}
+.mealCard img:hover{
+  scale: 5px;
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 1px;
+}
+
+dialog{
+  border: none;
+}
+dialog::backdrop{
+  background-color: var(--off-white);
+}
+dialog p {
+  text-align: left;
+}
+
+/* ************** Search ***************** */
+/* ************** ABC ***************** */
+
+ #alphabet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+   
+ }
+ #alphabet a {
+
+  margin: 40px;
+   
+ }
 
 /* ************** FOOTER ***************** */
 
